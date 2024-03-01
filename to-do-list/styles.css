@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 30px; /* Enlarged padding */
+}
+
+.ToDo-app {
+    width: 100%;
+    max-width: 720px; /* Enlarged max-width */
+    background-color: white;
+    margin: 200px auto 60px; /* Enlarged margins */
+    padding: 80px 50px 140px; /* Enlarged padding */
+    border-radius: 30px; /* Enlarged border-radius */
+}
+
+.ToDo-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px; /* Enlarged margin-bottom */
+}
+
+.ToDo-app h2 img {
+    width: 50px; /* Enlarged width */
+    margin-left: 20px; /* Enlarged margin */
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 50px; /* Enlarged border-radius */
+    padding-left: 40px; /* Enlarged padding */
+    margin-bottom: 50px; /* Enlarged margin-bottom */
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 20px; /* Enlarged padding */
+    font-weight: 18px; /* Enlarged font-size */
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 30px 70px; /* Enlarged padding */
+    background: #ff5945;
+    color: #fff;
+    font-size: 22px; /* Enlarged font-size */
+    cursor: pointer;
+    border-radius: 60px; /* Enlarged border-radius */
+}
+
+ul li {
+    list-style: none;
+    font-size: 24px; /* Enlarged font-size */
+    padding: 20px 15px 20px 70px; /* Enlarged padding */
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 40px; /* Enlarged height */
+    width: 40px; /* Enlarged width */
+    border-radius: 50%;
+    background-image: url(To-Do-Img/images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 20px; /* Enlarged top */
+    left: 15px; /* Enlarged left */
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(To-Do-Img/images/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 10px; /* Enlarged top */
+    width: 60px; /* Enlarged width */
+    height: 60px; /* Enlarged height */
+    font-size: 30px; /* Enlarged font-size */
+    color: #555;
+    line-height: 60px; /* Enlarged line-height */
+    text-align: center;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
